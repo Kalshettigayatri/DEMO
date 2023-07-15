@@ -1,15 +1,19 @@
 ﻿namespace DEMO
 {
-     internal class Program
+      public class Addition
     {
-         public static void AdditionOfTwoNUmbers()
+        static void Main(string[] args)
         {
-            Console.WriteLine("PLease Enter the first number");
-            int firstNumb = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("please enter the second number");
-            int secondNumber=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("sum:"+(firstNumb + secondNumber));
+            int Value1, Value2;
+            Console.WriteLine("please enter the Value1");
+            Value1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("please enter the Value2");
+            Value2 = Convert.ToInt32(Console.ReadLine());
+            int Result;
+            Result = Value1 + Value2;
+            Console.WriteLine("Sum of two Values:" + Result.ToString());
+            Console.ReadLine();
         }
-        
+
     }
 }
